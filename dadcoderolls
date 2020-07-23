@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 
 import argparse
-parser = argparse.ArgumentParser()
-rolls=[]
-parser.add_argument(dest='rolls', nargs='*')
-parser.parse_args()
-print(f'{rolls}')
+parser.add_argument(dest='dice_rolls', nargs='*')
+args = parser.parse_args()
+
+dictionary = vars(args)
+print(f"{dictionary}")
+
+rolls = dictionary['dice_rolls']
+print(f"{rolls}")
