@@ -3,4 +3,5 @@
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument(nargs='*')
+parser.add_argument(dest='bar')
 parser.parse_args()
