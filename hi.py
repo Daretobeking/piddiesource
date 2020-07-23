@@ -9,7 +9,7 @@ for i in range(10):
     if i == 5:
         print("Halfway there!")
         f = open("./Izzy.txt", "w")
-        f.write("Bonjour")
+        f.write("hi")
 
 print("made a change.")
 exit(0)
